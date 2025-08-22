@@ -1,0 +1,98 @@
+h1{
+    text-align: center;
+    font-size: 35px;
+    margin-top: -5.5vh;
+}
+
+.nomes{
+    font-size: 20px;
+}
+
+.descricao{
+    text-align: left;
+    font-size: 20px;
+}
+
+.pessoa{
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.pessoa1{
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.imgelenco{
+    width: 10vw;
+    border-radius: 24px;
+    height: 10vw;
+    object-fit: cover; 
+    object-position: center; 
+}
+
+.elenco{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4vw;
+}
+
+@media screen and (max-width: 900px) {
+    
+    .imgelenco{
+        width: 100px;
+        border-radius: 20px;
+        height: 100px;
+    }  
+    
+    h1{
+        text-align: center;
+        font-size: 35px;
+        margin-top: 1vh;
+}
+}
+
+
+@media screen and (max-width: 551px) {
+    
+    .elenco{
+        display: flex;
+        align-items: start;
+        justify-content: flex-start;
+        margin-left: 8vw;
+        row-gap: 5vh;
+    }
+
+    .pessoa1{margin-left: 15vw;
+         display: flex;
+        flex-direction: column;
+        width: 25vw;  
+        max-height: 50vh;
+        min-height: 30vw;
+    }
+        
+    .pessoa{
+        display: flex;
+        flex-direction: column;
+        width: 25vw; 
+        max-height: 50vh;
+        min-height: 40vw; 
+    }
+
+    .imgelenco{
+        width: 100%;
+        height: 25vw;
+    }  
+}
+
+@media screen and (max-width: 500px) {
+    
+    .elenco{
+        margin-left: 13vw;
+    }
+}
